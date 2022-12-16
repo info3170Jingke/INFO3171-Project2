@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b57af064c5.js" crossorigin="anonymous"></script>
+    <script src="http://d3js.org/d3.v7.min.js" charset="utf-8"></script> 
+    
+<!--     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+<!-- PLEASE ADD YOUR .css FILE HERE -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/buttons.css"/>
+    <link rel="stylesheet" href="./css/typography.css"/>
+    <link rel="stylesheet" href="./css/gridLayout.css"/>
+    <link rel="stylesheet" href="./css/data-visualization.css"/>
+    <link rel="stylesheet" href="./css/alert.css"/>
+    <link rel="stylesheet" href="./css/color.css"/>
+    <link rel="stylesheet" href="./css/Modal-switch.css"/>
+    <link rel="stylesheet" href="./css/forms.css"/>
+
+<!-- Add Favicon -->
+<link rel="icon" href="./img/icon/starair.png">  
+    
+<!-- CSS SECTION ENDS -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Quicksand&display=swap" rel="stylesheet">  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col s3">
+                <img src="./img/icon/starair.png" alt="logo"/>
+            </div>
+            <div class="col s9">
+                <h1>Star Air Library</h1>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col s3 h-100">
+                <ul class="tabs">
+                    <li><h6>General</h6></li>
+                    <li class="tab"><a href="#test1" class="active">Typography</a></li>
+                    <li class="tab"><a href="#test2">Color</a></li>
+                    <li class="tab"><a href="#test3">Page Layout</a></li>
+                    <li class="tab"><a href="#test4">Data Visualization</a></li>
+               
+                    <li><h6>Elements</h6></li>
+                
+                    <li class="tab"><a href="#test5">Buttons</a></li>
+                    <li class="tab"><a href="#test6">Form</a></li>
+                    <li class="tab"><a href="#test7">Feedback</a></li>
+                    <li class="tab"><a href="#test8">Icons</a></li>
+                    <li class="tab"><a href="#test9">Switch</a></li>
+                    <li class="tab"><a href="#test10">Modal</a></li>
+                </ul>
+            </div>
+            <div class="col s9">
+              <!-- TYPOGRAPHY STARTS -->
+              <div id="test1" class="typography_l1">
+                  <div>
+                      <div class="typogrpahy_heading">
+                          <div class="title">
+                              <h4><b>Typography</b></h4>
+                              <h5>Headings</h5>
+                          </div>
+                          <div class="typeface_container">
+                              <p class="example">Aa</p>
+                              <div class="ruboto_container">
+                                  <div class="ruboto" id="ruboto1">
+                                      <h5><b>Typeface</b></h5><br>
+                                      <span class="typefaceFontFamilyName">Roboto</span>
+                                  </div>
+                                  <div class="ruboto" id="ruboto2">
+                                      <h5><b>Font-Family</b></h5><br>
+                                      <span class="typefaceFontFamilyName">'Roboto', sans-serif</span>
+                                  </div> 
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="heading-example">
+                          <div class="headings">
+                              <h1 class="normal"><b>Star Air Brand Heading One</b></h1>
+                              <span>56px | bold | Roboto </span>
+                              <h1 class="normal">Star Air Brand Heading One</h1>
+                              <span>56px | normal | Roboto </span>
+                          </div>
+                          <hr>
+                          <div class="headings">
+                              <h2 class="normal"><b>Star Air Brand Heading Two</b></h2>
+                              <p>50px | bold | Roboto </p>
+                              <h2 class="normal">Star Air Brand Heading Two</h2>
+                              <p>50px | normal | Roboto </p>
+                          </div>
+                          <hr>
+                          <div class="headings">
+                              <h3 class="normal"><b>Star Air Brand Heading Three</b></h3>
+                              <span>44px | bold | Roboto </span>
+                              <h3 class="normal">Star Air Brand Heading Three</h3>
+                              <span>44px | normal | Roboto </span>
+                          </div>
+                          <hr>
+                          <div class="headings">
+                              <h4 class="normal"><b>Star Air Brand Heading Four</b></h4>
+                              <p>38px | bold | Roboto </p>
+                              <h4 class="normal">Star Air Brand Heading Four</h4>
+                              <p>38px | normal | Roboto </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="typogrpahy_heading">
+                          <div class="title">
+                              <h4><b>Typography</b></h4>
+                              <h5>Contents</h5>
+                          </div>
+                          <div class="typeface_container">
+                              <p class="example">Aa</p>
+                              <div class="ruboto_container">
+                                  <div class="ruboto" id="ruboto1">
+                                      <h5><b>Typeface</b></h5><br>
+                                      <span class="typefaceFontFamilyName">Roboto</span>
+                                  </div>
+                                  <div class="ruboto" id="ruboto2">
+                                      <h5><b>Font-Family</b></h5><br>
+                                      <span class="typefaceFontFamilyName">'Roboto', sans-serif</span>
+                                  </div> 
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="row_container">
+                          <div class="row">
+                              <p class="main-content content-xxs">This is xxs text. <b>This is xxs bold text.</b> | 1rem/16px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-xs">This is xs text. <b>This is xs bold text.</b> | 1.2rem/19.2px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-sm">This is sm text. <b>This is sm bold text.</b> | 1.4rem/22.4px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-md">This is md text. <b>This is md bold text.</b> | 1.6rem/25.6px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-lg">This is lg text. <b>This is lg bold text.</b> | 1.8rem/28.8px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-xl">This is xl text. <b>This is xl bold text.</b> | 2rem/32px | Roboto</p>
+                          </div>
+                          <div class="row">
+                              <p class="main-content content-xxl">This is xxl text. <b>This is xxl bold text.</b> | 2.2rem/35.2px | Roboto</p>
+                          </div>                        
+                      </div>
+                  </div>
+                  <div>
+                        <div class="typogrpahy_heading" id="chart">
+                           <div class="title">
+                                <h4><b>Typography</b></h4>
+                                <h5>Chart</h5>
+                           </div> 
+                           <div class="typeface_container">
+                                <p class="example">Aa</p>
+                                <div class="ruboto_container">
+                                    <div class="ruboto">
+                                        <h5><b>Typeface</b></h5><br>
+                                        <span class="typefaceFontFamilyName">Calibri</span>
+                                    </div>
+                                    <div class="ruboto">
+                                        <h5><b>Font-Family</b></h5><br>
+                                        <span class="typefaceFontFamilyName">'Calibri', sans-serif</span>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="row_container">
+                            <div class="headings">
+                                <h5 class="normal"><b>Chart Heading</b></h5>
+                                <p>32px | bold | Calibri </p>
+                                <h5 class="normal">Chart Heading</h5>
+                                <p>32px | normal | Calibri </p>
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <p class="main-content content-xxs">This is xxs text. <b>This is xxs bold text.</b> | 1rem/16px | Calibri</p>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <!-- TYPOGRAPHY ENDS -->
+<!--                 <div id="test1" class="col s12">
+                    <h3>Typography</h3>
+
+                    <div>
+                        <h4>Headings</h4>
+                        <div class="row heading-typogrpahy">
+                            <div class="col m3 typeface">
+                                <p>Aa</p>
+                            </div>
+                            <div class="col m9">
+                                <p>Typeface  |  Alatsi</p>
+                                <p>font-family  |  'Alatsi', sans-serif</p>
+                            </div>
+                         </div>
+                        <div class="row">
+                            <div class="headings">
+                                <h1>TECHIT Brand Heading One</h1>
+                                <hr>
+                                <p>56px | normal | Alatsi </p>
+                            </div>
+                            <div class="headings">
+                                <h2>TECHIT Brand Heading Two Alatsi</h2>
+                                <hr>
+                                <p>50px | normal | Alatsi </p>
+                            </div>
+                            <div class="headings">
+                                <h3>TECHIT Brand Heading Three Alatsi</h3>
+                                <hr>
+                                <p>44px | normal | Alatsi </p>
+                            </div>
+                            <div class="headings">
+                                <h4>TECHIT Brand Heading Four Alatsi</h4>
+                                <hr>
+                                <p>38px | normal | Alatsi </p>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Contents</h4>
+                        <div class="row content-typogrpahy">
+                            <div class="col m3 typeface-content">
+                                <p>Aa</p>
+                            </div>
+                            <div class="col m9">
+                                <p>Typeface  |  Quicksand</p>
+                                <p>font-family  |  'Quicksand', sans-serif</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="main-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                </p>
+                                <hr>
+                                <p>18px | normal | Quicksand | 150% </p>
+                            </div>                          
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <p class="main-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                </p>
+                                <hr>
+                                <p>18px | normal | Quicksand | 150% </p>
+                            </div>                          
+                        </div>
+                    </div>
+                   
+                </div> -->
+                <!-- COLORS START -->
+                <div id="test2" class="col s12">
+                    <h3>Color</h3>
+                    <div>
+                        <h5>Branding Colors</h5>
+                        <div class="color-container">
+                            <div class="main-color-1">
+                                <div class="color-content">
+                                    <p class="color-name">Cadmium Orange</p>
+                                    <p class="color-code">#F58634</p>
+                                </div>
+                            </div>
+                            <div class="main-color-2">
+                                <div class="color-content">
+                                    <p class="color-name">Antique White</p>
+                                    <p class="color-code">#FEE7D8</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>Functional Colors</h5>
+                        <div class="color-container">
+                            <div class="functional-color-1">
+                                <div class="color-content">
+                                    <p class="color-name">Pine Tree</p>
+                                    <p class="color-code">#2D2926</p>
+                                </div>
+                            </div>
+                            <div class="functional-color-2">
+                                <div class="color-content">
+                                    <p class="color-name">Jet</p>
+                                    <p class="color-code">#363435</p>
+                                </div>
+                            </div>
+                            <div class="functional-color-3">
+                                <div class="color-content">
+                                    <p class="color-name">Manatee</p>
+                                    <p class="color-code">#939FA5</p>
+                                </div>
+                            </div>
+                            <div class="functional-color-4">
+                                <div class="color-content">
+                                    <p class="color-name">Chinese White</p>
+                                    <p class="color-code">#E1E1E1</p>
+                                </div>
+                            </div>
+                            <div class="functional-color-5">
+                                <div class="color-content">
+                                    <p class="color-name">Pure White</p>
+                                    <p class="color-code">#FFFFFF</p>
+                                </div>
+                            </div>
+                        </div>   
+
+                        <h5>Feedback Colors</h5>
+                        <div class="color-container">
+                            <div class="feedback-color-1">
+                                <div class="color-content">
+                                    <p class="color-name">Spanish Gray</p>
+                                    <p class="color-code">#999999</p>
+                                </div>
+                            </div>
+                            <div class="feedback-color-2">
+                                <div class="color-content">
+                                    <p class="color-name">Button Blue</p>
+                                    <p class="color-code">#29B6F6</p>
+                                </div>
+                            </div>
+                            <div class="feedback-color-3">
+                                <div class="color-content">
+                                    <p class="color-name">Apple</p>
+                                    <p class="color-code">#51BE56</p>
+                                </div>
+                            </div>
+                            <div class="feedback-color-4">
+                                <div class="color-content">
+                                    <p class="color-name">Mikado Yellow</p>
+                                    <p class="color-code">#FFC107</p>
+                                </div>
+                            </div>
+                            <div class="feedback-color-5">
+                                <div class="color-content">
+                                    <p class="color-name">Giants Orange</p>
+                                    <p class="color-code">#FF5722</p>
+                                </div>
+                            </div>
+                            <div class="feedback-color-6">
+                                <div class="color-content">
+                                    <p class="color-name">Red</p>
+                                    <p class="color-code">#FF0000</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                <!-------- COLORS END --------> 
+<!--                <div id="test2" class="col s12">
+                    <h3>Color</h3>
+
+                    <div class="card-panel">
+                        <h5>Brand Color</h5>
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image main-color">
+                                        <p class="card-title">#1995ad</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Glacier Blue</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image second-color">
+                                        <p class="card-title">#a1d6e2</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Ice</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>Functional Color</h5>
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image functional-color-first">
+                                        <p class="card-title">#f1f1f2</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Overcast</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image functional-color-second">
+                                        <p class="card-title">#bcbabe</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Warm Gray</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image functional-color-third">
+                                        <p class="card-title">#0c090a</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Night</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image functional-color-fourth">
+                                        <p class="card-title">#c1e1dc</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Baby Blue</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h5>Feedback Color</h5>
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image feedback-color-first">
+                                        <p class="card-title">#fa6e59</p>
+
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Watermeon</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image feedback-color-second">
+                                        <p class="card-title">#ffdb5c</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Banana</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col s12 m2">
+                                <div class="card">
+                                    <div class="card-image feedback-color-third">
+                                        <p class="card-title">#52958b</p>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>Lichen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div id="test3" class="col s12">
+                    <h3>Page Layout</h3>
+
+                    <h5>The grid system we are using is made up of 6 flexible columns with a gap of 10px between the columns, and 10px padding. </h5>
+                    <h4>Grid sizes</h4>
+                    </br>
+                    <h5>1 in 1 size.</h5>
+                    <div class="grid-containerOne">
+                        <div class="item1">One of One </div>  
+                      </div>
+
+                    </br> 
+                    </br>   
+                    <h5>1 in 2 size.</h5>
+                    <div class="grid-containerTwo">
+                        <div class="item-1">One of Two</div>
+                        <div class="item-2">One of Two</div> 
+                    </div>
+                    </br> 
+                    </br>  
+
+                    <h5>1 in 3 size.</h5>
+                    <div class="grid-containerThree">
+                        <div class="itemone">One of Three</div>
+                        <div class="itemtwo">One of Three</div>
+                        <div class="itemthree">One of Three</div>  
+                      </div>
+                    </br> 
+                    </br>  
+
+                    <h4>Mixed grids</h4>
+
+                    <div class="grid-containerFour">
+                        <div class="itemOne">One of Six </div>
+                        <div class="itemTwo">Four of Six</div>
+                        <div class="itemThree">One of Six</div>  
+                       
+                      </div>
+                      
+                      
+                <h6>The grid columns are filled with 20px padding on both sides. The gap between columns is 10px on each side which make the total gab between every two columns 20px.</h6>
+                      </br>
+                    </br>
+                    <h5>Left it one column and two rows:</h5>
+                    <div class="grid-containerFive">
+                        <div class="itemFirst"> Left </div>
+                        <div class="itemSecond">Four of Six</div>  
+                        <div class="itemThird">One of Six</div>
+                        <div class="itemFourth">Five of Six</div>
+                      </div>
+                </div>
+                <!-- Data Visualization Starts -->
+                <div id="test4" class="col s12">
+                    <h3>Data Visualization</h3>
+                    <h4>Charts</h4>
+                    <p>Stylistically, our charts and graphs draw below demonstrate the satisfication level for our services.</p>
+                    <h5 class="chart-heading">Line Chart</h5>
+                    <img class="charts-size zoom" src="./img/charts/line-chart01.png" alt="flight distance">
+                    <br>
+                    <strong>Notes</strong>
+                    <p>Use solid line ot indicate acutal trends in data of distance travelled by each customer.Tooltips show travel distances of each individual customer. </p>
+                    <hr>
+                    <h5 class="chart-heading">Pie Chart</h5>
+                    <h6>The proportion of satisfied/neutral or unsatisfied customer responded</h6>
+                    <img class="charts-size zoom" src="./img/charts/pie-chart2.png" alt="proportion of satisfied and unsatisfied customers">
+                    <br>
+                    <strong>Notes</strong>
+                    <p>Using pie charts is an effective way of displaying and related data to figure out the propotion of different categorial data. It demonstrates the relationship of each category with the entire population. There are 46% of customers are satisfied with the services but 54% are unsatisfied customers or neutral.</p>
+                    <hr>
+                    <h5 class="chart-heading">Bar Chart</h5>
+                    <p>Please select category to display the chart of satisfactory level</p>
+                    <p>Dropdown:</p>
+                    <select name="satisfactory level by category" id="satisfyCategory">
+                        <option value="all" selected>All</option>
+                        <option value="checkin">Checkin Service</option>
+                        <option value="online">Ease of Online Booking</option>
+                        <option value="gate">Gate location</option>
+                        <option value="on-board">On-board service</option>
+                        <option value="baggage">Baggage Handling</option>
+                    </select>
+                    <div>
+                        <img class="charts-size option-img" id="all" src="./img/charts/Number of Satisfactory level (All).png" alt="satisfactory levels by category">
+                        <img class="charts-size option-img" id="checkin" src="./img/charts/Checkin-service.png" alt="Checkin-service">
+                        <img class="charts-size option-img" id="online" src="./img/charts/online-booking.png" alt="online-booking">
+                        <img class="charts-size option-img" id="gate" src="./img/charts/gate-location.png" alt="gate location">
+                        <img class="charts-size option-img" id="onBoard" src="./img/charts/on-boarding service.png" alt="on-boarding">
+                        <img class="charts-size option-img" id="baggage" src="./img/charts/Baggage-handling.png" alt="Baggage-handling">
+                    </div>
+                    <p>Notes: The chart displays number of each satisfactory answers. Such as how many people are answered as 5, 4, 3, 2, or 1 for the category you choose. The satisfactory levels are categories for 0 ~ 5. </p>
+                    <hr>
+                    <h5 class="chart-heading">Scatter Plot</h5>
+                    <img class="charts-size zoom" src="./img/charts/Scatter-plot.png" alt="total departure and arrival time late">
+                    <br>
+                    <p>Notes: This scatter plot shows the relationship of Total Delay minutes and Departure/arrival time convenient satisfactory. The x-axies represents the convenient satisfactory.And y-axis is the total delays in minutes. We can see how spread the data is.</p>
+                    <hr>
+                    <h5 class="chart-heading">Donut Chart</h5>
+                    <!-- <img class="charts-size zoom" src="./img/charts/Donut-chart.png" alt="Average satisfication rate by class"> -->
+                    <br>
+                    <div id="donut_chart"></div>
+                    <script>
+                        // Chart background
+                        d3.select('#donut_chart').style('background-image', 'radial-gradient(circle, rgb(255,255,255) 20%, rgb(193,193,193))')
+                                                .style('padding-top', '5px')
+
+                        // Chart title
+                        d3.select('#donut_chart').append('h6')
+                                                .text('Average Statisfacation Rate')
+                                                .style('text-align', 'center')
+                                                .style('wfont-eight', 'bold')
+                        
+                        // Chart legend 
+                        d3.select('#donut_chart').append('div')
+                                                .attr('id', 'legend')
+                                                .style('background-color', 'rgb(246,246,246, 0.5)')
+                                                .style('width', 'fit-content')
+                                                .style('padding', '5px')
+                                                .style('float', 'right')
+                                                .style('margin', '0 auto')
+                                                .style('margin-top', '180px')
+                                                .style('margin-right', '10px')
+                        // Legend 1
+                        d3.select('#legend').append('div')
+                                            .attr('id', 'legend1')
+                        d3.select('#legend1').append('svg')
+                                            .attr('id', 'svg1')
+                                            .attr('width', '7')
+                                            .attr('height', '7')
+                        d3.select('#svg1').append('rect')
+                                        .attr('width', '7')
+                                        .attr('height', '7')
+                                        .style('fill', 'rgb(255,202,8)')
+                        d3.select('#legend1').append('span')
+                                            .attr('id', 'span1')
+                        d3.select('#span1').text(' Eco')
+                                        .style('font-size', 'x-small')
+                                        .style('font-weight', 'bold')
+
+                        // Legend 2
+                        d3.select('#legend').append('div')
+                                            .attr('id', 'legend2')
+                        d3.select('#legend2').append('svg')
+                                            .attr('id', 'svg2')
+                                            .attr('width', '7')
+                                            .attr('height', '7')
+                        d3.select('#svg2').append('rect')
+                                        .attr('width', '7')
+                                        .attr('height', '7')
+                                        .style('fill', 'rgb(206,141,62)')
+                        d3.select('#legend2').append('span')
+                                            .attr('id', 'span2')
+                        d3.select('#span2').text(' Business')
+                                        .style('font-size', 'x-small')
+                                        .style('font-weight', 'bold')
+
+                        // Legend 2
+                        d3.select('#legend').append('div')
+                                            .attr('id', 'legend3')
+                        d3.select('#legend3').append('svg')
+                                            .attr('id', 'svg3')
+                                            .attr('width', '7')
+                                            .attr('height', '7')
+                        d3.select('#svg3').append('rect')
+                                        .attr('width', '7')
+                                        .attr('height', '7')
+                                        .style('fill', 'rgb(249,147,29)')
+                        d3.select('#legend3').append('span')
+                                            .attr('id', 'span3')
+                        d3.select('#span3').text(' Eco Plus')
+                                        .style('font-size', 'x-small')
+                                        .style('font-weight', 'bold')
+
+                        // Dount chart
+                        // set the dimensions and margins of the graph
+                        var svgwidth = 440;
+                        var svgheight = 400;
+                        var padding = 10;
+
+
+                        var svg = d3.select("#donut_chart")
+                                    .append('svg')
+                                    .attr('width', svgwidth)
+                                    .attr('height', svgheight)
+
+                        var inner_width = svgwidth - padding;
+                        var inner_height = svgheight - padding;
+
+                        var g = svg.append("g")
+                                    .attr("transform", "translate(220, 230)")
+                                    .attr("class", "graph")
+                                    
+                        var radius = Math.min(inner_width, inner_height) / 2;
+
+                        // Create data
+                        
+                        d3.csv('./customer_satisfaction.csv').then(function(data){
+                            let retrivedData = {
+                                eco: 0,
+                                ecoP: 0,
+                                bus: 0,
+                            }
+                            let total = 0;
+                            data.forEach(function(d){
+                                total++;
+                                if(d.satisfaction === 'satisfied'){
+                                    if(d.Class === 'Eco'){
+                                        retrivedData.eco++;
+                                    }
+                                    else if(d.Class === 'Eco Plus'){
+                                        retrivedData.ecoP++;
+                                    }
+                                    else{
+                                        retrivedData.bus++
+                                    }
+                                }
+                            })
+                            console.log(retrivedData);
+
+                            // set the color scale
+                            var color = d3.scaleOrdinal()
+                                        .range(['rgb(255,202,8)', 'rgb(206,141,62)', 'rgb(249,147,29)']);
+
+                            // Compute the position of each group on the pie:
+                            var pie = d3.pie()
+                                        .value(d => {
+                                            return d[1];
+                                        });
+
+                            var arc = d3.arc()
+                                        .innerRadius(radius * 0.33)
+                                        .outerRadius(radius * 0.6) 
+                            var labelArc = d3.arc()
+                                            .innerRadius(radius * 0.9)
+                                            .outerRadius(radius * 0.9)
+
+                            g.selectAll('.graph')
+                                    .data(pie(Object.entries(retrivedData)))
+                                    .join('path')
+                                    .attr('d', arc )
+                                    .attr('fill', function(d){
+                                        console.log(d.data[1])
+                                        return color(d.data[1])
+                                    })
+
+                            g.selectAll('.allPolylines')
+                                .data(pie(Object.entries(retrivedData)))
+                                .join('polyline')
+                                .attr("stroke", "gray")
+                                .attr("fill", 'none')
+                                .attr('stroke-width', 1)
+                                .attr('points', function(d) {
+                                console.log(d)
+                                var posA = arc.centroid(d);
+                                var posB = labelArc.centroid(d);
+                                var posC = labelArc.centroid(d);
+                                console.log('positionsA', posA)
+                                console.log('positionsB', posB)
+
+                                console.log('positionsC', posC)
+
+                                const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2
+
+                                posC[0] = radius * 0.95 * (midangle < Math.PI ? 1: -1)
+                                return [posA, posB, posC]
+                            })    
+                            
+                            g.selectAll('.allLabels')
+                                .data(pie(Object.entries(retrivedData)))
+                                .join('text')
+                                .text(d => {
+                                    if(d.data[0] === 'eco'){
+                                        let percentage = (d.data[1] / total).toFixed(2)*100
+                                        return  `${percentage} %`;
+                                    }
+                                    else if(d.data[0] === 'ecoP'){
+                                        let percentage = (d.data[1] / total).toFixed(2)*100
+                                        return  `${percentage} %`;
+                                    }
+                                    else{
+                                        let percentage = (d.data[1] / total).toFixed(2)*100
+                                        return  `${percentage} %`;
+                                    }
+                                // return d.data[0]
+                                })
+                                .attr('margin-bottom', '5px')
+                                .attr('transform', function(d){
+                                    const pos = labelArc.centroid(d)
+                                    const midangle = d.startAngle + (d.endAngle - d.startAngle) / 2;
+                                    pos[0]= radius * 0.95 *( midangle < Math.PI ? 1:-1);
+                                    return `translate(${pos})`;
+
+
+                                var zoom = d3.zoom()
+                                                .extent([[0,0], [width, height]])
+                                                .scaleExtent([1, 8])
+                                                .on("zoom", zoomed)
+                                svg.call(zoom)
+
+                                function zoomed({transform}) {
+                                    console.log(transform)
+
+                                    g.attr("transform", `translate(${transform.x}, ${transform.y}) scale(${transform.k})`)
+                                }
+                            })
+                        })
+
+
+
+                    </script>
+                    <p>Notes: The donut chart demonstrates average satisfaction rate by seat class.The three classes are Eco, Business, and Eco Plus.</p> 
+                    <hr>
+                    <h5 class="chart-heading">Area chart</h5>
+                    <img class="charts-size zoom" src="./img/charts/area-chart.png" alt="the first 15 disloyal customer 4 tickets">
+                    <br>
+                    <p>Notes: this area chart is about the first 15 Disloyal Customers'4 (or less) Ticket Prices. It's a stacked chart with customer id as x-axis and ticket price as y-axis. </p>
+                    <hr>
+                    <h5 class="chart-heading">Single Value Charts</h5>
+                    <img class="charts-size zoom" src="./img/charts/single-value.png" alt="number of loyal customer">
+                    <p class="type">Notes: It's a single value chart of number of Loyal customers.</p>
+                    <br>
+                    <img class="charts-size zoom" src="./img/charts/single-value02.png" alt="total number of flight distance">
+                    <p class="type">Notes: Total number of flight distance. Sum all the flight distances of customers in kilometers.</p>
+                    <br>
+                    <img class="charts-size zoom" src="./img/charts/single-value03.png" alt="number of customer without experiencing delays">
+                    <p class="type">Notes: It's a single value chart of number of customers who did not experience any departure or arrival delays.</p>
+                </div>
+                <!-- Data Visualization Ends -->
+
+<!---------------------------- BUTTONS STARTS ------------------------------->
+                <div id="test5" class="col s12">
+                    <h5>Buttons</h5>
+                    <!-- Default Buttons -->
+                    <div class="type_container">
+                        <p class="type">Default Buttons</p>
+                        <div class="button_container">
+                            <div class="bg_bright_top">
+                                <button type="button" class="btn_default_orange">Button</button> 
+                                <button type="button" class="btn_default_gray">Button</button> 
+                            </div>
+                            <div class="bg_dark_btm">
+                                <button type="button" class="btn_default_orange_dark">Button</button> 
+                                <button type="button" class="btn_default_lightOrange_dark">Button</button>
+                            </div>
+                        </div>
+                        <div class="code_container">
+                            <pre class="code">
+&lt;div class=&quot;button_container&quot;&gt;
+    &lt;div class=&quot;bg_bright_top&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_default_orange&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_default_black&quot;&gt;Button&lt;/button&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;bg_dark_btm&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_default_orange_dark&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_default_lightOrange_dark&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                        </div>
+                    </div>
+                    <!-- Filled Buttons  -->
+                    <div class="type_container">
+                        <p class="type">Filled Buttons</p>
+                        <div class="button_container">
+                            <div class="bg_bright_top">
+                                <button type="button" class="btn_filled_orange_bright">Button</button> 
+                                <button type="button" class="btn_filled_gray_bright">Button</button> 
+                            </div>
+                            <div class="bg_dark_btm">
+                                <button type="button" class="btn_filled_orange_dark">Button</button> 
+                                <button type="button" class="btn_filled_white_dark">Button</button>
+                            </div>
+                        </div>
+                        <div class="code_container">
+                            <pre class="code">
+&lt;div class=&quot;button_container&quot;&gt;
+    &lt;div class=&quot;bg_bright_top&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_filled_orange_bright&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_filled_gray_bright&quot;&gt;Button&lt;/button&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;bg_dark_btm&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_filled_orange_dark&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_filled_white_dark&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                        </div>
+                    </div>
+                    <!-- Text Only Buttons -->
+                    <div class="type_container">
+                        <p class="type">Text Only Buttons</p>
+                        <div class="button_container">
+                            <div class="bg_bright_top">
+                                <button type="button" class="btn_textOnly_orange_bright">Button</button> 
+                                <button type="button" class="btn_textOnly_gray_bright">Button</button> 
+                            </div>
+                            <div class="bg_dark_btm">
+                                <button type="button" class="btn_textOnly_lightOrange_dark">Button</button> 
+                                <button type="button" class="btn_textOnly_white_dark">Button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_container">
+<pre class="code">
+&lt;div class=&quot;button_container&quot;&gt;
+    &lt;div class=&quot;bg_bright_top&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_textOnly_orange_bright&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_textOnly_gray_bright&quot;&gt;Button&lt;/button&gt; 
+    &lt;/div&gt;
+    &lt;div class=&quot;bg_dark_btm&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn_textOnly_lightOrange_dark&quot;&gt;Button&lt;/button&gt; 
+        &lt;button type=&quot;button&quot; class=&quot;btn_textOnly_white_dark&quot;&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    </div>
+                </div>
+              
+<!---------------------------- BUTTONS ENDS ------------------------------->
+          
+<!---------------------------- FORMS START --------------------------------->
+                <div id="test6" class="col s12">
+                    <h3>Forms</h3>
+                    <!-- Login Form -->
+                    <h5>Login</h5>
+                    <div class="form-container">
+                        <div class="form-textfield">
+                            <label>Email / Username</label>
+                            <input id="text" type="text" required>
+                        </div>
+                        <div class="form-textfield">                           
+                            <label>Password</label>
+                            <input id="text" type="password" required>
+                        </div>
+                        <p id="psw"><a href="#">Forgot your password?</a></p>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="form-code">
+<pre>
+    <code>
+    &lt;div class=&quot;form-container&quot;&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;
+            &lt;label&gt;Email / Username&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;text&quot; required&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;                           
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;password&quot; required&gt;
+        &lt;/div&gt;
+        &lt;p id=&quot;psw&quot;&gt;Forgot your password?&lt;/p&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;Login&quot;&gt;
+    &lt;/div&gt;
+    </code>  
+</pre>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <h5>Registration</h5>
+                    <div class="form-container">
+                        <div class="form-textfield">
+                            <label>Name</label>
+                            <input id="text" type="text" required>
+                        </div>
+                        <div class="form-textfield">                           
+                            <label>Email</label>
+                            <input id="text" type="text" required>
+                        </div>
+                        <div class="form-textfield">                           
+                            <label>Username</label>
+                            <input id="text" type="text" required>
+                        </div>
+                        <div class="form-textfield">                           
+                            <label>Password</label>
+                            <input id="text" type="password" required>
+                        </div>
+                        <div class="terms">
+                            <input type="checkbox">
+			                <span>By checking this box, I agree to the <a href="#">Terms and Conditions</a>.</span>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </div>
+<pre>
+    <code>
+    &lt;div class=&quot;form-container&quot;&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;
+            &lt;label&gt;Name&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;text&quot; required&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;                           
+            &lt;label&gt;Email&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;text&quot; required&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;                           
+            &lt;label&gt;Username&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;text&quot; required&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;form-textfield&quot;&gt;                           
+            &lt;label&gt;Password&lt;/label&gt;
+            &lt;input id=&quot;text&quot; type=&quot;password&quot; required&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;terms&quot;&gt;
+            &lt;input type=&quot;checkbox&quot;&gt;
+            &lt;span&gt;By checking this box, I agree to the &lt;a href=&quot;#&quot;&gt;Terms and Conditions&lt;/a&gt;.&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;/div&gt;        
+    </code>
+</pre>
+                </div>   
+<!---------------------------- FORMS END ----------------------------------->  
+ <!---------------------------- Start Feedback ------------------------------->               
+ <div id="test7" class="col s12">
+
+    <h3>Notifications</h3>
+   
+        <h4>Feedback Elements</h4>
+
+        <h5>The feedback elements of our website</h5>
+            </br>
+            
+        <div class="alert">
+            <span class="icon">
+            <i class="fa fa-superpowers"></i>
+            </span>
+        
+            <div class="text">
+            <strong>Default</strong>
+            <p>Default Message Description Goes Here!</p>
+            </div>
+        
+            <button class="close">
+            <i class="fa fa-close"></i>
+            </button>
+        
+        </div>
+        
+        <div class="alert alert-success">
+            <span class="icon">
+            <i class="fa fa-check"></i>
+            </span>
+        
+            <div class="text">
+            <strong>Success</strong>
+            <p>Success Message Description Goes Here!</p>
+            </div>
+        
+            <button class="close">
+            <i class="fa fa-close"></i>
+            </button>
+        
+        </div>
+        
+        <div class="alert alert-warning">
+            <span class="icon">
+            <i class="fa fa-exclamation-triangle"></i>
+            </span>
+        
+            <div class="text">
+            <strong>Warning</strong>
+            <p>Warning Message Description Goes Here!</p>
+            </div>
+        
+            <button class="close">
+            <i class="fa fa-close"></i>
+            </button>
+        
+        </div>
+        
+        <div class="alert alert-danger">
+            <span class="icon">
+            <i class="fa fa-close"></i>
+            </span>
+        
+            <div class="text">
+            <strong>Danger</strong>
+            <p>Danger Message Description Goes Here!</p>
+            </div>
+        
+            <button class="close">
+            <i class="fa fa-close"></i>
+            </button>
+        
+        </div>
+        
+        <div class="alert alert-primary">
+            <span class="icon">
+            <i class="fa fa-info"></i>
+            </span>
+        
+            <div class="text">
+            <strong>Primary</strong>
+            <p>Primary Message Description Goes Here!</p>
+            </div>
+        
+            <button class="close">
+            <i class="fa fa-close"></i>
+            </button>
+        
+        </div>
+
+
+        <br><br><br>
+        <h3>Toaster messages</h3>
+        <h5>Example of toast</h5>
+        <div class="bodyButton">
+        <div id="toasts"></div>
+        
+        <button class="btn" id="button">Show Notification</button>
+        </div>
+        
+
+
+
+            </br></br>
+       
+        <h3>Popup</h3>
+            <h5>This is an example of the popup used in this website</h5>
+    </br></br>
+        <div class="popupStyle">
+            
+            <button class="popup" onclick="myFunction()">Click me to toggle the popup!
+              <span class="popuptext" id="myPopup">A Simple Popup!</span>
+            </button>
+            </div>
+        </br></br>  
+            
+            
+            <div class="contTip">
+                <i style='font-size:24px' class='fas'>&#xf0a1; General information you should know   </i>
+              </div>
+                    </br></br>
+
+                    <h3>Collapsibles</h3>
+
+                    <h5>An example of Collapsible:</h5>
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                    <div class="content">
+                      <p>This is an example of an collapsable text:Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>  
+
+</div> 
+
+      <!---------------------------- Feedback ENDS ------------------------------->
+    
+<!-- ---------------------Icons Starts---------------------------- -->
+                <div id="test8" class="col s12">
+                    <h3>Icons</h3>
+                    <p class="type">Brand Logo</p>
+                    <div class="icon-container">
+                        <img style="max-width:160px;" src="./img/icon/starair.png" alt="brand logo">
+                    </div> 
+                    <br>
+                    <p class="type">Social media</p>
+                    <!-- container one -->
+                    <div class="icon-container">
+                        <h4>Small Simple</h4>
+                        <div class="gridFour">
+                            <div class="icon-card">
+                            <img src="https://img.icons8.com/small/2x/facebook-new.png" alt="facebook">
+                            <p>Facebook</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/small/2x/facebook.png" alt="round facebook">
+                                <p>Facebook</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/small/2x/instagram-new.png" alt="instagram">
+                                <p>Instagram</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/small/2x/tiktok.png" alt="tiktok">
+                                <p>Tiktok</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="	https://img.icons8.com/small/2x/twitter.png" alt="twitter">
+                                <p>Twitter</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/small/2x/youtube-play.png" alt="youtube">
+                                <p>YouTube</p>
+                            </div>       
+                        </div>                                      
+                    </div>
+                    <br>
+                    <!-- Container Two -->
+                    <div class="icon-container">
+                        <h4>Windows 11 Filled</h4>
+                        <div class="gridFour">
+                            <div class="icon-card">
+                            <img src="https://img.icons8.com/fluency-systems-filled/2x/facebook.png" alt="facebook">
+                            <p>Facebook</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/fluency-systems-filled/2x/facebook-new.png" alt="round facebook">
+                                <p>Facebook</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/fluency-systems-filled/2x/instagram-new.png" alt="instagram">
+                                <p>Instagram</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/fluency-systems-filled/2x/tiktok.png" alt="tiktok">
+                                <p>Tiktok</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/fluency-systems-filled/2x/twitter.png" alt="twitter">
+                                <p>Twitter</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/fluency-systems-filled/2x/youtube-play.png" alt="youtube">
+                                <p>YouTube</p>
+                            </div>       
+                        </div> 
+                    </div>
+                    <br>
+                    <p>Notes: Thesse are social media icons sets used on the website footer.</p>
+                    <!-- container three -->
+                    <br>
+                    <p class="type">Business</p>
+                    <div class="icon-container">
+                        <h4>Business Communication</h4>
+                        <div class="gridFour">
+                            <div class="icon-card">
+                            <img src="https://img.icons8.com/material/2x/business-network.png" alt="network">
+                            <p>Business Network</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/material/2x/chatbot.png" alt="ChatBox">
+                                <p>Chatbox</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/material/2x/faq--v2.png" alt="faq">
+                                <p>FAQ</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/material/2x/add-contact-to-company--v1.png" alt="contact us">
+                                <p>Contact Us</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/material/2x/omnichannel.png" alt="omnichannel">
+                                <p>Omnichannel</p>
+                            </div>
+                            <div class="icon-card">
+                                <img src="https://img.icons8.com/material/2x/sorting-answers--v1.png" alt="sorting">
+                                <p>Sorting</p>
+                            </div>       
+                        </div> 
+                       </div>
+                       <br>
+                       <p>Notes: The icons are used to demonstrate services of the brand.</p>
+                </div>
+<!--------------------------------- Icons ENDS ---------------------------->
+
+                <!--Nate Component Switch-->
+                <div id="test9" class="col s12">
+                        <h4>Switch</h4>
+                        <div class="title-wrap-content">
+                            <h6>When to use</h6>
+                                <ul>
+                                    <li>- If you need to represent the switching between two states or on-off state.</li>
+                                    <li>- The difference between <b>Switch and Checkbox is that Switch will trigger a state change directly when you toggle it, while Checkbox is generally used for state marking, which should work in conjunction with submit operation.</li>
+                                </ul>
+                        </div>
+                        <div class="toggle-wrap">
+                            <!--Basic-->
+                             <h6>Two switch toggle</h6>
+                             <div class="switch-field">
+                                <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+                                <label for="radio-one">Yes</label>
+                                <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                <label for="radio-two">No</label>
+                            </div>
+                        </div>
+                        <div class="toggle-wrap">
+                            <!--Switch toggle with text-->
+                            <h6>Three switch toggle</h6>
+                            <div class="switch-field">
+                                <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
+                                <label for="radio-three">One</label>
+                                <input type="radio" id="radio-four" name="switch-two" value="maybe" />
+                                <label for="radio-four">Two</label>
+                                <input type="radio" id="radio-five" name="switch-two" value="no" />
+                                <label for="radio-five">Three</label>
+                            </div>
+                        </div>
+                        <div class="toggle-wrap">
+                            <!--Switch toggle with text-->
+                            <h6>Basic switch toggle</h6>
+                            <div class="switch-field">
+                                <input type="radio" id="radio-six" name="switch-two" value="yes" checked/>
+                                <label for="radio-six"></label>
+                                <input type="radio" id="radio-seven" name="switch-two" value="no" />
+                                <label for="radio-seven"></label>
+                            </div>
+                        </div>
+                        <hr> <!-- Line break!! -->
+                        <div class="title-wrap-content">
+                            <h6>Content</h6>
+                            <b>Toggle should always have a default value</b>
+                            <p>
+                                Toggle comes with a pre-selected default state (either ON or OFF). If you need to allow users to make a choice (i.e the user needs to answer ‘yes’ or ‘no’), it’s better to use a checkbox because the checkbox doesn’t have a default value.
+                            </p>
+                            <br>
+                            <b>Write good labels</b>
+                            <p>
+                                Good labels make the toggle switch easy to understand. Label makes it clear what option the toggle controls, as well as what state the toggle right now.
+                            </p>
+                            <br>
+                            <b>Any action triggered by the toggle should immediately take effect</b>
+                            <p>
+                                When users interact with toggles, they shouldn’t need to click Save or Confirm button to apply a new state. For the very same reason, it’s better to avoid using toggles in long forms where other types of form fields are present, and the user needs to tap the Submit button for changes to take place. In this case, it’s safer to replace a toggle switch with a single checkbox.
+                            </p>   
+                        </div>
+                </div>
+                  
+                  <!------------------Modal------------------>
+                  
+                <div id="test10" class="col s12">
+                        <div class="title-wrap">
+                            <h4>Modals</h4>
+                            <span>The modal component provides a solid foundation for creating dialogs, popovers, lightboxes, or whatever else.</span>
+                        </div>
+                        <div class="title-wrap-content">
+                            <h6>Usage</h6>
+                            <span>When the modal opens:</span>
+                                <ul>
+                                    <li>- focus is trapped within the modal and set to the first tabbable element.</li>
+                                    <li>- content behind a modal dialog is inert, meaning that users cannot interact with it.</li>
+                                </ul>
+                        </div>
+                            <!-- Modal Card -->
+                            <div class="card-wrapper">
+                                <main class="card-modal">
+                                    <img src="./img/notification.svg" class="card__image">
+                                    <h3 class="card__title">Modal title</h3>
+                                    <p class="card__description">Modal content goes here</p>
+                                    <div class="button-wrapper">
+                                        <div class="btn-1"><button class="btn-sec">Cancel</button></div>
+                                        <div class="btn-2"><button class="btn-prm">Accept</button></div>
+                                    </div>
+                                </main>
+                            </div>
+                           
+                        <hr> <!-- Line break!! -->
+                        <div class="title-wrap-content">
+                            <h6>Centered with single action</h6>
+                            <!-- Modal Card -->
+                            <div class="card-wrapper">
+                                <main class="card-modal">
+                                    <img src="./img/notification.svg" class="card__image">
+                                    <h3 class="card__title">Modal title</h3>
+                                    <p class="card__description">Modal content goes here</p>
+                                    <div class="button-wrapper">
+                                        <div class="btn-2"><button class="btn-prm-2">Accept</button></div>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                        <hr> <!-- Line break!! -->
+                        <div class="title-wrap-content">
+                            <h6>Simple alert</h6>
+                            <!-- Modal Card -->
+                            <div class="card-wrapper">
+                                <main class="card-modal">
+                                    <img src="./img/warning.svg" class="card__image">
+                                    <h3 class="card__title">Modal title</h3>
+                                    <p class="card__description">Modal content goes here</p>
+                                    <div class="button-wrapper">
+                                        <div><button class="btn-alert">Close</button>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                        <hr> <!-- Line break!! -->
+                        <div class="title-wrap-content">
+                            <h6>Content</h6>
+                            <b>Body text</b>
+                            <p>
+                                Modal content should be centered around task-oriented scenarios and what a user must do to complete that task. If the task is complicated or requires more than a few lines of instructional text, consider using another component or experience, such as a separate page in the workflow. If content exceeds the container height, an overflow scrollbar will appear, which may cause users to miss important context.
+                            </p>
+                            <br>
+                            <b>Capitalization and case</b>
+                            <p>
+                                Modal content should be centered around task-oriented scenarios and what a user must do to complete that task. If the task is complicated or requires more than a few lines of instructional text, consider using another component or experience, such as a separate page in the workflow. If content exceeds the container height, an overflow scrollbar will appear, which may cause users to miss important context.                            
+                            </p>
+                            <br>
+                            <b>Modal headers</b>
+                            <p>
+                                For modal headers, be brief and descriptive about the action a user must take to resolve the task. Try to use verb and noun combinations that clearly describes the dialog’s task or purpose. Header length should not exceed one line.
+                            </p>   
+                        </div>
+                 
+
+
+            </div>
+        </div>
+    </div>    
+    
+    
+    
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/data-visual.js"></script>
+    <script src="./js/alert.js"></script>
+  </body>
+</html>
+      
