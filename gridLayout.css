@@ -3,11 +3,7 @@
   display: grid;
   grid-template-areas:
     'one one one one one one ';
-<<<<<<< HEAD
-  background-color:  #FEE7D8;
-=======
   background-color:  #F58634;
->>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
   padding: 10px;
 }
 

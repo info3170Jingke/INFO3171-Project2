@@ -2,12 +2,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
+<<<<<<< HEAD
 nav {
     background-color: #F58634;
 }
 .brand-logo {
     max-height: 8rem;
 }
+=======
+>>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
 
 img {
     width: 100%;
@@ -30,17 +33,29 @@ img {
 
 .tabs .tab a {
     padding: 0;
+<<<<<<< HEAD
     color: #2D2926;
 }
 
 .tabs .tab a:hover, .tabs .tab a.active {
     color:#2D2926;
+=======
+    color: #0c090a;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color:#0c090a;
+>>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
 }
 
 .tabs .tab a:focus, .tabs .tab a:focus.active {
     padding: 0;
     background: #f58634;
+<<<<<<< HEAD
     color:#2D2926;
+=======
+    color:#0c090a;
+>>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
 }
 
 p:first-child {
@@ -60,7 +75,11 @@ p:first-child {
 
 /* h1 */
 h1, h2, h3, h4, h5, h6 {
+<<<<<<< HEAD
     color: #363435;
+=======
+    color: #333;
+>>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
     font-family: 'Alatsi', sans-serif;
 }
 
@@ -173,9 +192,12 @@ h6:nth-child(2) {
 .feedback-color-third {
     background: #52958b
 }
+<<<<<<< HEAD
 
 .dash-card {
     background-color: #FFFFFF;
     box-shadow: #E1E1E1;
     min-height: 200px;
 }
+=======
+>>>>>>> b410ab7056545b17af4da5c989458837c1e1ec2f
