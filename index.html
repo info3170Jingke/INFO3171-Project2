@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Import Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/b57af064c5.js" crossorigin="anonymous"></script>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Add Favicon -->
+    <link rel="icon" href="./img/icon/starair.png">  
+    <!-- PLEASE ADD YOUR .css FILE HERE -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/buttons.css"/>
+    <link rel="stylesheet" href="./css/typography.css"/>
+    <link rel="stylesheet" href="./css/gridLayout.css"/>
+    <link rel="stylesheet" href="./css/data-visualization.css"/>
+    <link rel="stylesheet" href="./css/alert.css"/>
+    <link rel="stylesheet" href="./css/color.css"/>
+    <link rel="stylesheet" href="./css/Modal-switch.css"/>
+    <link rel="stylesheet" href="./css/forms.css"/>
+
+<!-- Add Favicon -->
+<link rel="icon" href="./image/starair.png">  
+    
+<!-- CSS SECTION ENDS -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=Quicksand&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>      
+<header>
+    <nav>
+        <div class="container-fluid">
+          <div class="navbar-header">   
+            <a class="navbar-brand" href="#"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Messages</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="row">
+            <div class="col">
+                <a href="#"><img class="brand-logo"src="./image/starair.png" alt="logo"/></a>   
+            </div>
+            <div class="col">
+                <h1 class="normal">Star Air Dashboard</h1>
+            </div>         
+        </div>
+</header>
+
+<main>
+    
+    <div class="grid-containerTwo">
+        
+    
+        <div class="item-1 dash-card">
+            <div id="bar-lengend"><div id="bar-lengend"></div>
+<div id="group_bar_chart"></div></div>
+            <div id="group_bar_chart"></div>
+        </div>
+        <div class="item-2 dash-card"></div>
+    </div>
+    <div class="grid-containerThree">
+        <div class="itemOne dash-card"></div>
+        <div class="itemTwo dash-card"></div>
+        <div class="itemThree dash-card"></div>
+    </div>
+    <div class="grid-containerFive">
+        <div class="itemFirst dash-card"></div>
+        <div class="itemSecond dash-card"></div>
+        <div class="itemThird dash-card"></div>
+        <div class="itemFourth dash-card"></div>
+    </div>
+    <div class="">
+        <div class="dash-card"></div>
+    </div>
+    <div class="">
+        <div class="dash-card"></div>
+    </div>
+
+</main>
+    
+<footer>
+
+</footer>
+</body>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/data-visual.js"></script>
+    <script src="http://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        var svgwidth = 900;
+        var svgheight = 500;
+        var padding = 100;
+
+        var svg = d3.select('#group_bar_chart')
+                    .append('svg')
+                    .attr('width', svgwidth)
+                    .attr('height', svgheight);
+        var inner_width = svgwidth - padding;
+        var inner_height = svgheight - padding;
+        var g = svg.append('g')
+                    .attr('transform', 'translate(50, 50)')
+                    .attr('class', 'graph');
+        // -----------------Helper Function---------------------
+        // helper function to count how many items occurs in the column
+        // function countItem(dataSet, colName, value){
+        //     var targetCol = dataSet.map(d => d[colName]);
+        //     var c = 0;
+        //     for (i=0; i < targetCol.length; i++){
+        //         if (targetCol[i]===value){
+        //             c +=1 ;
+        //         }     
+        //     }
+        //     return c
+        // }
+
+        // d3.csv('./data/customer_satisfaction.csv').then(function(data){
+        //     console.log(countItem(data,'Checkin service', '0'));
+        //     console.log(countItem(data,'Checkin service', '1'));
+        //     console.log(countItem(data,'Checkin service', '2'));
+        //     console.log(countItem(data,'Checkin service', '3'));
+        //     console.log(countItem(data,'Checkin service', '4'));
+        //     console.log(countItem(data,'Checkin service', '5'));
+        //     console.log(countItem(data,'Ease of Online booking', '0'));
+        //     console.log(countItem(data,'Ease of Online booking', '1'));
+        //     console.log(countItem(data,'Ease of Online booking', '2'));
+        //     console.log(countItem(data,'Ease of Online booking', '3'));
+        //     console.log(countItem(data,'Ease of Online booking', '4'));
+        //     console.log(countItem(data,'Ease of Online booking', '5'));
+        //     console.log(countItem(data,'Gate location', '0'));
+        //     console.log(countItem(data,'Gate location', '1'));
+        //     console.log(countItem(data,'Gate location', '2'));
+        //     console.log(countItem(data,'Gate location', '3'));
+        //     console.log(countItem(data,'Gate location', '4'));
+        //     console.log(countItem(data,'Gate location', '5'));
+        //     console.log(countItem(data,'On-board service', '0'));
+        //     console.log(countItem(data,'On-board service', '1'));
+        //     console.log(countItem(data,'On-board service', '2'));
+        //     console.log(countItem(data,'On-board service', '3'));
+        //     console.log(countItem(data,'On-board service', '4'));
+        //     console.log(countItem(data,'On-board service', '5'));
+        //     console.log(countItem(data,'Baggage handling', '0'));
+        //     console.log(countItem(data,'Baggage handling', '1'));
+        //     console.log(countItem(data,'Baggage handling', '2'));
+        //     console.log(countItem(data,'Baggage handling', '3'));
+        //     console.log(countItem(data,'Baggage handling', '4'));
+        //     console.log(countItem(data,'Baggage handling', '5'));
+
+        // });
+        //----------------End of helper function---------------
+            d3.csv('./data/num-of-satisfactory-level-by-category.csv').then(function(data){
+                console.log(data);
+            //get x-axis
+            var groups = data.map(d => d.Categories)
+            console.log(groups);
+            var xscale = d3.scaleBand()
+                            .domain(groups)
+                            .range([0, inner_width])
+                            .padding([0.1])
+            var xaxis = d3.axisBottom()
+                        .scale(xscale);
+            
+            g.append('g')
+                .attr('transform',"translate(0," + inner_height + ")")
+                .call(xaxis)
+            //get y-axis
+            var yscale = d3.scaleLinear()
+                            .domain([0, 50])
+                            .range([inner_height,0])
+            var yaxis = d3.axisLeft()
+                            .scale(yscale);
+            g.append('g')
+            .call(yaxis);
+
+            var subgroups = data.columns.slice(1);
+            var xscaleSubGroup = d3.scaleBand()
+                .domain(subgroups)
+                .range([0, xscale.bandwidth()]);
+            var color = d3.scaleOrdinal()
+                        .domain(subgroups)
+                        .range(['#F58634', '#2D2926', '#939FA5','#29B6F6','#51BE56','#FFC107'])
+            g.append('g')
+            .selectAll('g')
+            .data(data)
+            .join('g')
+            .attr('transform', d => `translate(${xscale(d.Categories)}, 0)`)
+            .selectAll('rect')
+            .data(function(d){
+                return subgroups.map(function(key){
+                    return {
+                        'category': key, 'num':d[key]
+                    }
+                })
+            })
+            .join('rect')
+            .attr('x', d => xscaleSubGroup(d.category))
+            .attr('y', d => yscale(d.num))
+            .attr('width', xscaleSubGroup.bandwidth())
+            .attr('height', d => inner_height - yscale(d.num))
+            .attr('fill', d => color(d.category))
+        // -----------legend------------------------
+        var svg_lengend = d3.select("bar-lengend");
+        var legend_color = d3.scaleOrdinal()
+                            .domain(groups)
+                            .range(d3.color)
+                            var size = 20
+        svg_lengend.selectAll("mydots")
+                    .data(groups)
+                    .enter()
+                    .append("rect")
+                    .attr("x", 100)
+                    .attr("y", function(d,i){ return 100 + i*(size+5)}) // 100 is where the first dot appears. 25 is the distance between dots
+                    .attr("width", size)
+                    .attr("height", size)
+                    .style("fill", function(d){ return legend_color(d)})
+
+        // Add one dot in the legend for each name.
+        svg_lengend.selectAll("mylabels")
+        .data(groups)
+        .enter()
+        .append("text")
+            .attr("x", 100 + size*1.2)
+            .attr("y", function(d,i){ return 100 + i*(size+5) + (size/2)}) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function(d){ return legend_color(d)})
+            .text(function(d){ return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+        })
+        
+
+
+    </script>
+
+</html>
